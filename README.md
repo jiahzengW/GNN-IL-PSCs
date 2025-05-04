@@ -8,7 +8,7 @@ GNN-based framework combining molecular graph representations with device charac
 - Interpretable defect passivation analysis
 
 - ## 📂 Repository Structure
-- ```
+```
 ├── .gitignore
 ├── Fingerprint framework.py
 ├── IL-Research-in-PSCs.iml
