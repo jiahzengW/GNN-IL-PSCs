@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
 gnn_model.py
-
 """
 import os
 import argparse
