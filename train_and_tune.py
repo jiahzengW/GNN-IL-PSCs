@@ -1,14 +1,6 @@
 #!/usr/bin/env python3
 """
 train_and_tune.py
-
-Comprehensive training and hyperparameter tuning script for GNN-based PCE regression models.
-Features:
-  - Grid search over learning rate, dropout probability, hidden dimensions, and attention dimensions
-  - Modular train/evaluate functions with logging
-  - Integration with GraphDataset and PCERegressor from gnn_model.py
-  - Results aggregation and export to Excel
-  - Argparse interface for flexible configuration
 """
 import os
 import argparse
