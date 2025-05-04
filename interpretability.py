@@ -1,17 +1,6 @@
 #!/usr/bin/env python3
 """
 interpretability.py
-
-Advanced interpretability tools for Graph Neural Network (GNN) models predicting perovskite solar cell PCE.
-Features:
-  - Saliency maps via input gradients
-  - Integrated Gradients for node-level attribution
-  - SHAP-based perturbation explainer for graph data
-  - Utilities for edge importance via gradient aggregation
-  - Visualization helpers for mapping importance back to graph structure
-
-Dependencies:
-  - torch, captum, shap, torch_geometric, networkx, matplotlib
 """
 
 from typing import Optional, Tuple, List, Dict
