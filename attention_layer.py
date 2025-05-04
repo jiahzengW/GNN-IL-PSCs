@@ -2,18 +2,6 @@
 """
 attention_layer.py
 
-Highly robust and configurable attention mechanisms for graph and sequence models:
-  - Scaled dot-product attention with optional masking and dropout
-  - Multi-head attention with residual connections, layer normalization, and dropout
-  - Extensive input validation and type hints to reduce misuse
-  - Single-head pooling attention for flexible aggregation
-
-Usage examples:
-    attn = MultiHeadAttention(embed_dim=64, num_heads=8)
-    out = attn(query, key, value, mask=mask)
-
-    pool = AttentionPool(input_dim=128)
-    pooled = pool(node_features)
 """
 
 import torch
