@@ -9,16 +9,11 @@ GNN-based framework combining molecular graph representations with device charac
 
 ## 📂 Repository Structure
 ```
-├── .gitignore
-├── Fingerprint framework.py
-├── IL-Research-in-PSCs.iml
-├── Interpretability_framework.py
-├── MDN_framework.py
 ├── README.md
-├── Tailored GNN_framework.py
-├── misc.xml
-├── modules.xml
-└── workspace.xml
+├── attention_layer.py
+├── gnn_model.py
+├── interpretability.py
+├── train_and_tune.py
 ```
 
 ## 📊 Dependencies
