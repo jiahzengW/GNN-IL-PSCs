@@ -2,15 +2,6 @@
 """
 gnn_model.py
 
-Advanced Graph Neural Network (GNN) model for predicting perovskite solar cell power conversion efficiency (PCE).
-Features:
-  - Data augmentation on graph node features
-  - StandardScaler normalization for node, edge, and device features
-  - Multi-layer NNConv and GATConv for graph convolution
-  - Attention pooling and TopKPooling for hierarchical representation
-  - Transformer encoder for sequence modeling on graph-level features
-  - Integration of device-level features
-  - Configurable training and evaluation pipeline with logging
 """
 import os
 import argparse
@@ -39,13 +30,6 @@ def setup_logger(level: int = logging.INFO) -> logging.Logger:
     logger.setLevel(level)
     return logger
 
-
-def augment_graph_data(graph: Data, noise_level: float = 0.05) -> Data:
-    """Return a graph with Gaussian noise added to node features."""
-    g = copy.deepcopy(graph)
-    noise = torch.randn_like(g.x) * noise_level
-    g.x = g.x + noise
-    return g
 
 
 class GraphDataset(InMemoryDataset):
@@ -94,10 +78,7 @@ class GraphDataset(InMemoryDataset):
             df = torch.tensor(scaled_device[idx], dtype=torch.float32)
             g.device_features = df.unsqueeze(0)
 
-            # Optionally augment
-            if self.augment:
-                new_graphs.append(augment_graph_data(g))
-            new_graphs.append(g)
+          
 
         self.data, self.slices = self.collate(new_graphs)
 
