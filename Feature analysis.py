@@ -2,8 +2,6 @@
 """
 feature_analysis.py
 
-Script to extract embeddings from a trained GNN, combine with ionic liquid labels,
-train an XGBoost regressor, and analyze feature importances (native and SHAP).
 """
 import argparse
 import torch
@@ -153,7 +151,3 @@ if __name__ == '__main__':
     X = df_full.values
     y = targets
 
-    # Train XGBoost and analyze
-    xgb_model = train_xgb(X, y)
-    plot_feature_importance(xgb_model, df_full.columns.tolist())
-    plot_shap_summary(xgb_model, df_full)
