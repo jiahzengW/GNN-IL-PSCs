@@ -10,6 +10,7 @@ GNN-based framework combining molecular graph representations with device charac
 ## 📂 Repository Structure
 ```
 ├── README.md
+├── Feature analysis.py
 ├── attention_layer.py
 ├── gnn_model.py
 ├── interpretability.py
