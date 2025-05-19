@@ -12,6 +12,9 @@ GNN-based framework combining molecular graph representations with device charac
 ├── README.md
 ├── Feature analysis.py
 ├── attention_layer.py
+├── data_edges.csv
+├── data_graph_info.csv
+├── data_nodes.csv
 ├── gnn_model.py
 ├── interpretability.py
 ├── train_and_tune.py
