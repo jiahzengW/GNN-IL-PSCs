@@ -10,6 +10,7 @@ from torch.nn import Module, ModuleList, Linear, Dropout, LayerNorm, Parameter
 import math
 
 
+
 class ScaledDotProductAttention(Module):
     """Compute scaled dot-product attention with optional mask."""
     def __init__(self, dropout: float = 0.1) -> None:
