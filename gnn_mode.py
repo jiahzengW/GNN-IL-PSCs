@@ -19,6 +19,7 @@ import numpy as np
 import copy
 
 
+
 def setup_logger(level: int = logging.INFO) -> logging.Logger:
     """Configure and return a logger."""
     logger = logging.getLogger("GNNModel")
