@@ -14,7 +14,6 @@ import xgboost as xgb
 import shap
 import matplotlib.pyplot as plt
 
-
 def extract_embeddings(model, dataset, device, batch_size=64):
     """
     Extract graph-level embeddings from the GNN for each sample.
