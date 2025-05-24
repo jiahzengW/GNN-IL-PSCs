@@ -14,6 +14,7 @@ import networkx as nx
 import matplotlib.pyplot as plt
 
 
+
 def check_data(data: Data) -> None:
     """Validate that Data object contains required attributes."""
     required = ['x', 'edge_index', 'edge_attr', 'y']
