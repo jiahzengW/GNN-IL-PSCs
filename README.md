@@ -20,6 +20,7 @@ GNN-based framework combining molecular graph representations with device charac
 ├── train_and_tune.py
 ```
 
+
 ## 📊 Dependencies
 **Core Framework**
 - torch==2.0.1 torch_geometric==2.3.1 dgl==1.0.2
